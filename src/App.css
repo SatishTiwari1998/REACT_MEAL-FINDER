@@ -1,0 +1,134 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ * {
+   box-sizing: border-box;
+ }
+
+ /* /////////// SEARCH RESULT JSX /////////////// */
+.meal-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease-in;
+  opacity: 0;
+}
+
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+
+.meals {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.meal {
+  cursor: pointer;
+  position: relative;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+}
+.meal img {
+  width: 100%;
+  height: 100%;
+  border: 4px solid #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.meal-info:hover {
+  opacity: 1;
+  background:rgba(0, 0, 0, 0.8);
+  border: 4px solid #fff;
+}
+
+/* ////////////////////////////// RECIEPE JSX STYLING /////////////////////// */
+
+.single-meal {
+  margin: 30px auto;
+  width: 70%;
+}
+
+.single-meal h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.single-meal h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.single-meal img {
+  width: 200px;
+  height: 200px;
+  border: 4px #fff solid;
+}
+.single-meal-info {
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.single-meal-info p {
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  padding: 10px;
+  background: rgb(202, 6, 81);
+  width: 30%;
+  border-radius:10px;
+  margin: 10px 5px;
+  font-weight: 600;
+}
+.main p{
+  border: 4px solid white;
+  max-height: 40vh;
+  text-align: justify;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.main ul li {
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  background-color: #fff;
+  display: inline-block;
+  color: #2d2013;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0 5px 5px 0;
+}
